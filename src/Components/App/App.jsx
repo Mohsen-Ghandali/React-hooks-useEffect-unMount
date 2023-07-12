@@ -9,7 +9,7 @@ const changeSize=()=>{
   console.log("trigger counter");
   window.addEventListener("resize", changeSize)
   return ()=>{
-    console.log("clean");
+    console.log("clean up");
     window.removeEventListener("resize", changeSize)
   }
  },[resize])
